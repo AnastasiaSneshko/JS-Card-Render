@@ -1,0 +1,81 @@
+@import './reset.css';
+
+* {
+  box-sizing: border-box;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardWrapper {
+  width: 270px;
+  margin: 20px;
+}
+
+.imgWrapper {
+  position: relative;
+  width: inherit;
+  height: 270px;
+}
+
+.img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: inherit;
+}
+
+.cardName {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cardTitle {
+  color: red;
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.cardDescription {
+  font-size: 15px;
+  line-height: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.initials {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.initials:empty::after {
+  content: 'Unknown';
+}
+
+.linkWrapper{
+  display: flex;
+}
+
+.social{
+  height: 40px;
+  width: 40px;
+  border: 1px solid #e8ecee;
+  margin-right: 5px;
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: none;
+  color: #c6cacc;
+  transition: background-color linear 0.3s;
+}
+
+.social:hover{
+  color: #fff;
+  background-color: red;
+}
